@@ -1,4 +1,3 @@
-
 window.onload = function () {
   let emailState = false;
   let emailModal = document.getElementsByClassName("email-modal")[0];
@@ -48,7 +47,7 @@ window.onload = function () {
   let showThankMessage = () => {
     thankContainer.classList.add("email-thank--success");
     setTimeout(() => {
-        closeModal();
+      closeModal();
     }, 3000);
   };
 
@@ -72,7 +71,7 @@ window.onload = function () {
     closeModal();
   });
 
-  document.body.addEventListener("mouseleave", () => {
+  document.body.addEventListener("mouseout", () => {
     showModal();
   });
 
